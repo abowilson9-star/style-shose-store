@@ -11,13 +11,14 @@
     left: 10px;
     z-index: 1000;
 }
-.logo-container img {
-    width: 150px;           /* حجم مناسب وكبير للوجو */
-    height: 110px;          /* مربع مظبوط */
-    object-fit: contain;    /* بيخلي اللوجو والاسم يظهروا كاملين بدون قص */
-    padding: 8px;           /* مساحة داخلية عشان الاسم ميبقاش لازق في البرواز */
+   .logo-container img {
+    width: 150px; /* الحجم اللي كبرناه */
+    height: 45px; /* خليهم زي بعض عشان يكون مربع ومظبوط */
+    object-fit: contain;
+    border: 2px solid #ffcc00; /* حط السطر ده هنا للبرواز الأصفر */
+    border-radius: 12px; /* اختياري: لو عايز حواف البرواز تكون دائرية شوية */
 }
-        body { 
+       body { 
     background: #000 url('pic.jpeg') repeat fixed center; 
     background-size: 150px; 
     color: #fff; font-family: Arial, sans-serif; text-align: center; margin: 0; padding: 20px; 
