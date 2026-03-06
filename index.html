@@ -39,6 +39,26 @@ body::before {
     </style>
 </head>
 <body>
+    <div id="cart-counter" onclick="showCart()" style="position: fixed; top: 15px; right: 15px; z-index: 2000; background: #ff6600; color: #fff; padding: 10px 20px; border-radius: 30px; font-weight: bold; cursor: pointer; border: 2px solid #fff; display: flex; align-items: center; gap: 8px; direction: rtl;">
+   🛒 السلة (<span id="cart-count">0</span>)
+</div>
+<div id="cart-sidebar" style="display:none; position: fixed; top: 0; right: 0; width: 320px; height: 100%; background: #1a1a1a; color: white; z-index: 3000; box-shadow: -5px 0 15px rgba(0,0,0,0.5); padding: 20px; overflow-y: auto; direction: rtl; border-left: 2px solid gold;">
+    <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid gold; padding-bottom: 10px; margin-bottom: 20px;">
+        <h2 style="margin: 0; font-size: 20px; color: gold;">🛒 السلة بتاعتك</h2>
+        <span onclick="document.getElementById('cart-sidebar').style.display='none'" style="cursor: pointer; font-size: 30px; font-weight: bold; color: gold;">&times;</span>
+    </div>
+
+    <div id="cart-items-list" style="width: 100%;">
+        <p style="text-align: center; color: #888;">السلة فاضية حالياً</p>
+    </div>
+
+    <div style="margin-top: 30px; border-top: 2px solid gold; padding-top: 20px;">
+        <h3 id="total-price" style="color: gold; text-align: center;">إجمالي الحساب: 0 جنيه</h3>
+        <button onclick="sendOrder()" style="background: #25d366; color: white; border: none; padding: 15px; width: 100%; font-size: 18px; font-weight: bold; border-radius: 10px; cursor: pointer; margin-top: 10px;">
+            إتمام الأوردر عبر الواتساب ✅
+        </button>
+    </div>
+</div>
     <div id="g_id_onload"
      data-client_id="632005911611-vgt4pd6shcro1m086meq6d8ib5hedi9q.apps.googleusercontent.com"
      data-callback="handleCredentialResponse"
@@ -151,7 +171,7 @@ body::before {
  <p class="gold-text">200 جنيه</p>
         </div>
         <div class="product-card">
-            <img src="jpg,bag2"onclick="openImg(this)" onerror="this.src='jpg,bag19.jpeg'">
+            <img src="jpg,bag2"onclick="openImg(this)" onerror="this.src='jpg,bag16.jpeg'">
             <p class="gold-text">شنطة سواريه</p>
  <p class="gold-text">200 جنيه</p>
         </div>
@@ -165,7 +185,266 @@ body::before {
             <p class="gold-text">شنطة سواريه</p>
  <p class="gold-text">200 جنيه</p>
         </div>
-
+ <div class="product-card">
+            <img src="jpg,bag2"onclick="openImg(this)" onerror="this.src='jpg,bag19.jpeg'">
+            <p class="gold-text">شنطة سواريه</p>
+ <p class="gold-text">200 جنيه</p>
+        </div>
+         <div class="product-card">
+            <img src="jpg,bag2"onclick="openImg(this)" onerror="this.src='jpg,bag20.jpeg'">
+            <p class="gold-text">شنطة سواريه</p>
+ <p class="gold-text">200 جنيه</p>
+        </div>
+         <div class="product-card">
+            <img src="jpg,bag2"onclick="openImg(this)" onerror="this.src='jpg,bag21.jpeg'">
+            <p class="gold-text">شنطة سواريه</p>
+ <p class="gold-text">200 جنيه</p>
+         </div>
+          <div class="product-card">
+            <img src="jpg,bag2"onclick="openImg(this)" onerror="this.src='jpg,bag22.jpeg'">
+            <p class="gold-text">شنطة سواريه</p>
+ <p class="gold-text">200 جنيه</p>
+        </div>
+         <div class="product-card">
+            <img src="jpg,bag2"onclick="openImg(this)" onerror="this.src='jpg,bag23.jpeg'">
+            <p class="gold-text">شنطة سواريه</p>
+ <p class="gold-text">200 جنيه</p>
+        </div>
+         <div class="product-card">
+            <img src="jpg,bag2"onclick="openImg(this)" onerror="this.src='jpg,bag24.jpeg'">
+            <p class="gold-text">شنطة سواريه</p>
+ <p class="gold-text">200 جنيه</p>
+        </div>
+         <div class="product-card">
+            <img src="jpg,bag2"onclick="openImg(this)" onerror="this.src='jpg,bag25.jpeg'">
+            <p class="gold-text">شنطة سواريه</p>
+ <p class="gold-text">200 جنيه</p>
+        </div>
+         <div class="product-card">
+            <img src="jpg,bag2"onclick="openImg(this)" onerror="this.src='jpg,bag26.jpeg'">
+            <p class="gold-text">شنطة سواريه</p>
+ <p class="gold-text">200 جنيه</p>
+        </div>
+         <div class="product-card">
+            <img src="jpg,bag2"onclick="openImg(this)" onerror="this.src='jpg,bag27.jpeg'">
+            <p class="gold-text">شنطة سواريه</p>
+ <p class="gold-text">200 جنيه</p>
+        </div>
+         <div class="product-card">
+            <img src="jpg,bag2"onclick="openImg(this)" onerror="this.src='jpg,bag28.jpeg'">
+            <p class="gold-text">شنطة سواريه</p>
+ <p class="gold-text">200 جنيه</p>
+        </div>
+         <div class="product-card">
+            <img src="jpg,bag2"onclick="openImg(this)" onerror="this.src='jpg,bag29.jpeg'">
+            <p class="gold-text">شنطة سواريه</p>
+ <p class="gold-text">200 جنيه</p>
+        </div>
+         <div class="product-card">
+            <img src="jpg,bag2"onclick="openImg(this)" onerror="this.src='jpg,bag30.jpeg'">
+            <p class="gold-text">شنطة سواريه</p>
+ <p class="gold-text">200 جنيه</p>
+        </div>
+         <div class="product-card">
+            <img src="jpg,bag2"onclick="openImg(this)" onerror="this.src='jpg,bag31.jpeg'">
+            <p class="gold-text">شنطة سواريه</p>
+ <p class="gold-text">200 جنيه</p>
+        </div>
+         <div class="product-card">
+            <img src="jpg,bag2"onclick="openImg(this)" onerror="this.src='jpg,bag32.jpeg'">
+            <p class="gold-text">شنطة سواريه</p>
+ <p class="gold-text">200 جنيه</p>
+        </div>
+         <div class="product-card">
+            <img src="jpg,bag2"onclick="openImg(this)" onerror="this.src='jpg,bag33.jpeg'">
+            <p class="gold-text">شنطة سواريه</p>
+ <p class="gold-text">200 جنيه</p>
+        </div>
+         <div class="product-card">
+            <img src="jpg,bag2"onclick="openImg(this)" onerror="this.src='jpg,bag34.jpeg'">
+            <p class="gold-text">شنطة سواريه</p>
+ <p class="gold-text">200 جنيه</p>
+        </div>
+         <div class="product-card">
+            <img src="jpg,bag2"onclick="openImg(this)" onerror="this.src='jpg,bag35.jpeg'">
+            <p class="gold-text">شنطة سواريه</p>
+ <p class="gold-text">200 جنيه</p>
+        </div>
+         <div class="product-card">
+            <img src="jpg,bag2"onclick="openImg(this)" onerror="this.src='jpg,bag36.jpeg'">
+            <p class="gold-text">شنطة سواريه</p>
+ <p class="gold-text">200 جنيه</p>
+        </div>
+         <div class="product-card">
+            <img src="jpg,bag2"onclick="openImg(this)" onerror="this.src='jpg,bag37.jpeg'">
+            <p class="gold-text">شنطة سواريه</p>
+ <p class="gold-text">200 جنيه</p>
+        </div>
+         <div class="product-card">
+            <img src="jpg,bag2"onclick="openImg(this)" onerror="this.src='jpg,bag38.jpeg'">
+            <p class="gold-text">شنطة سواريه</p>
+ <p class="gold-text">200 جنيه</p>
+        </div>
+         <div class="product-card">
+            <img src="jpg,bag2"onclick="openImg(this)" onerror="this.src='jpg,bag39.jpeg'">
+            <p class="gold-text">شنطة سواريه</p>
+ <p class="gold-text">200 جنيه</p>
+        </div>
+         <div class="product-card">
+            <img src="jpg,bag2"onclick="openImg(this)" onerror="this.src='jpg,bag40.jpeg'">
+            <p class="gold-text">شنطة سواريه</p>
+ <p class="gold-text">200 جنيه</p>
+        </div>
+         <div class="product-card">
+            <img src="jpg,bag2"onclick="openImg(this)" onerror="this.src='jpg,bag41.jpeg'">
+            <p class="gold-text">شنطة سواريه</p>
+ <p class="gold-text">200 جنيه</p>
+        </div>
+         <div class="product-card">
+            <img src="jpg,bag2"onclick="openImg(this)" onerror="this.src='jpg,bag42.jpeg'">
+            <p class="gold-text">شنطة سواريه</p>
+ <p class="gold-text">200 جنيه</p>
+        </div>
+         <div class="product-card">
+            <img src="jpg,bag2"onclick="openImg(this)" onerror="this.src='jpg,bag43.jpeg'">
+            <p class="gold-text">شنطة سواريه</p>
+ <p class="gold-text">200 جنيه</p>
+        </div>
+         <div class="product-card">
+            <img src="jpg,bag2"onclick="openImg(this)" onerror="this.src='jpg,bag44.jpeg'">
+            <p class="gold-text">شنطة سواريه</p>
+ <p class="gold-text">200 جنيه</p>
+        </div>
+         <div class="product-card">
+            <img src="jpg,bag2"onclick="openImg(this)" onerror="this.src='jpg,bag45.jpeg'">
+            <p class="gold-text">شنطة سواريه</p>
+ <p class="gold-text">200 جنيه</p>
+        </div>
+         <div class="product-card">
+            <img src="jpg,bag2"onclick="openImg(this)" onerror="this.src='jpg,bag46.jpeg'">
+            <p class="gold-text">شنطة سواريه</p>
+ <p class="gold-text">200 جنيه</p>
+        </div>
+         <div class="product-card">
+            <img src="jpg,bag2"onclick="openImg(this)" onerror="this.src='jpg,bag47.jpeg'">
+            <p class="gold-text">شنطة سواريه</p>
+ <p class="gold-text">200 جنيه</p>
+        </div>
+ <div class="product-card">
+            <img src="jpg,bag2"onclick="openImg(this)" onerror="this.src='jpg,bag48.jpeg'">
+            <p class="gold-text">شنطة سواريه</p>
+ <p class="gold-text">200 جنيه</p>
+        </div>
+         <div class="product-card">
+            <img src="jpg,bag2"onclick="openImg(this)" onerror="this.src='jpg,bag49.jpeg'">
+            <p class="gold-text">شنطة سواريه</p>
+ <p class="gold-text">200 جنيه</p>
+        </div>
+         <div class="product-card">
+            <img src="jpg,bag2"onclick="openImg(this)" onerror="this.src='jpg,bag50.jpeg'">
+            <p class="gold-text">شنطة سواريه</p>
+ <p class="gold-text">200 جنيه</p>
+        </div>
+         <div class="product-card">
+            <img src="jpg,bag2"onclick="openImg(this)" onerror="this.src='jpg,bag51.jpeg'">
+            <p class="gold-text">شنطة سواريه</p>
+ <p class="gold-text">200 جنيه</p>
+        </div>
+         <div class="product-card">
+            <img src="jpg,bag2"onclick="openImg(this)" onerror="this.src='jpg,bag52.jpeg'">
+            <p class="gold-text">شنطة سواريه</p>
+ <p class="gold-text">200 جنيه</p>
+        </div>
+         <div class="product-card">
+            <img src="jpg,bag2"onclick="openImg(this)" onerror="this.src='jpg,bag53.jpeg'">
+            <p class="gold-text">شنطة سواريه</p>
+ <p class="gold-text">200 جنيه</p>
+        </div>
+         <div class="product-card">
+            <img src="jpg,bag2"onclick="openImg(this)" onerror="this.src='jpg,bag54.jpeg'">
+            <p class="gold-text">شنطة سواريه</p>
+ <p class="gold-text">200 جنيه</p>
+        </div>
+         <div class="product-card">
+            <img src="jpg,bag2"onclick="openImg(this)" onerror="this.src='jpg,bag55.jpeg'">
+            <p class="gold-text">شنطة سواريه</p>
+ <p class="gold-text">200 جنيه</p>
+        </div>
+         <div class="product-card">
+            <img src="jpg,bag2"onclick="openImg(this)" onerror="this.src='jpg,bag56.jpeg'">
+            <p class="gold-text">شنطة سواريه</p>
+ <p class="gold-text">200 جنيه</p>
+        </div>
+         <div class="product-card">
+            <img src="jpg,bag2"onclick="openImg(this)" onerror="this.src='jpg,bag57.jpeg'">
+            <p class="gold-text">شنطة سواريه</p>
+ <p class="gold-text">200 جنيه</p>
+        </div>
+         <div class="product-card">
+            <img src="jpg,bag2"onclick="openImg(this)" onerror="this.src='jpg,bag58.jpeg'">
+            <p class="gold-text">شنطة سواريه</p>
+ <p class="gold-text">200 جنيه</p>
+        </div>
+         <div class="product-card">
+            <img src="jpg,bag2"onclick="openImg(this)" onerror="this.src='jpg,bag59.jpeg'">
+            <p class="gold-text">شنطة سواريه</p>
+ <p class="gold-text">200 جنيه</p>
+        </div>
+         <div class="product-card">
+            <img src="jpg,bag2"onclick="openImg(this)" onerror="this.src='jpg,bag60.jpeg'">
+            <p class="gold-text">شنطة سواريه</p>
+ <p class="gold-text">200 جنيه</p>
+        </div>
+         <div class="product-card">
+            <img src="jpg,bag2"onclick="openImg(this)" onerror="this.src='jpg,bag61.jpeg'">
+            <p class="gold-text">شنطة سواريه</p>
+ <p class="gold-text">200 جنيه</p>
+        </div>
+         <div class="product-card">
+            <img src="jpg,bag2"onclick="openImg(this)" onerror="this.src='jpg,bag62.jpeg'">
+            <p class="gold-text">شنطة سواريه</p>
+ <p class="gold-text">200 جنيه</p>
+        </div>
+         <div class="product-card">
+            <img src="jpg,bag2"onclick="openImg(this)" onerror="this.src='jpg,bag63.jpeg'">
+            <p class="gold-text">شنطة سواريه</p>
+ <p class="gold-text">200 جنيه</p>
+        </div>
+ <div class="product-card">
+            <img src="jpg,bag2"onclick="openImg(this)" onerror="this.src='jpg,bag64.jpeg'">
+            <p class="gold-text">شنطة سواريه</p>
+ <p class="gold-text">200 جنيه</p>
+        </div>
+         <div class="product-card">
+            <img src="jpg,bag2"onclick="openImg(this)" onerror="this.src='jpg,bag65.jpeg'">
+            <p class="gold-text">شنطة سواريه</p>
+ <p class="gold-text">200 جنيه</p>
+        </div>
+         <div class="product-card">
+            <img src="jpg,bag2"onclick="openImg(this)" onerror="this.src='jpg,bag66.jpeg'">
+            <p class="gold-text">شنطة سواريه</p>
+ <p class="gold-text">200 جنيه</p>
+        </div>
+         <div class="product-card">
+            <img src="jpg,bag2"onclick="openImg(this)" onerror="this.src='jpg,bag67.jpeg'">
+            <p class="gold-text">شنطة سواريه</p>
+ <p class="gold-text">200 جنيه</p>
+        </div>
+         <div class="product-card">
+            <img src="jpg,bag2"onclick="openImg(this)" onerror="this.src='jpg,bag68.jpeg'">
+            <p class="gold-text">شنطة سواريه</p>
+ <p class="gold-text">200 جنيه</p>
+        </div>
+         <div class="product-card">
+            <img src="jpg,bag2"onclick="openImg(this)" onerror="this.src='jpg,bag69.jpeg'">
+            <p class="gold-text">شنطة سواريه</p>
+ <p class="gold-text">200 جنيه</p>
+        </div>
+         <div class="product-card">
+            <img src="jpg,bag2"onclick="openImg(this)" onerror="this.src='jpg,bag70.jpeg'">
+            <p class="gold-text">شنطة سواريه</p>
+ <p class="gold-text">200 جنيه</p>
+        </div>
         </div>
 
     <div class="category-box" style="border: 2px solid gold; padding: 10px; margin: 10px; cursor: pointer;" onclick="toggleSection('heels')">قسم الهيلزات</div>
@@ -417,8 +696,11 @@ function parseJwt(token) {
 </script>
 <div id="myModal" style="display:none; position:fixed; z-index:9999; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); text-align:center; cursor:pointer;" onclick="this.style.display='none'">
     <span style="position:absolute; top:20px; right:35px; color:white; font-size:50px; font-weight:bold;">&times;</span>
-    <img id="imgFull" style="max-width:90%; max-height:85%; margin-top:50px; border:3px solid gold; border-radius:15px; box-shadow: 0 0 20px gold;">
+    <img id="imgFull" style="max-width:90%; max-height:65%; margin-top:50px; border:3px solid gold; border-radius:15px; box-shadow: 0 0 20px gold;">
     <p id="caption" style="color:gold; font-size:25px; margin-top:20px; font-weight:bold;"></p>
+    <button onclick="addToCart()" style="background: #ff6600; color: white; border: none; padding: 12px 25px; font-size: 18px; font-weight: bold; border-radius: 10px; cursor: pointer; margin-top: 15px; display: block; margin-left: auto; margin-right: auto; width: 80%;">
+    إضافة إلى سلة المشتريات 🛒
+</button>
 </div>
 
 <script>
@@ -431,6 +713,91 @@ function openImg(el) {
     fullImg.src = el.src;
     // الكود ده بياخد اسم المنتج اللي تحت الصورة ويعرضه كعنوان
     captionText.innerHTML = el.parentElement.getElementsByClassName('gold-text')[0].innerText;
+}
+</script>
+
+<script>
+// 1. الذاكرة اللي بتشيل المنتجات
+let cart = [];
+
+// 2. دالة إضافة المنتج (بتاخد الاسم والسعر)
+function addToCart() {
+    let productName = document.getElementById('caption').innerText;
+    let price = 0;
+    
+    // بندور على السعر جوه الكروت اللي في الصفحة
+    let cards = document.getElementsByClassName('product-card');
+    for(let card of cards) {
+        if(card.innerText.includes(productName)) {
+            let priceMatch = card.innerText.match(/\d+/); 
+            price = priceMatch ? parseInt(priceMatch[0]) : 0;
+            break;
+        }
+    }
+
+    cart.push({ name: productName, price: price });
+    document.getElementById('cart-count').innerText = cart.length;
+    alert("تمت إضافة " + productName + " للسلة بنجاح! ✅");
+    document.getElementById("myModal").style.display = "none"; 
+}
+
+// 3. دالة عرض محتويات السلة في القائمة الجانبية
+function showCart() {
+    let listDiv = document.getElementById('cart-items-list');
+    let totalSpan = document.getElementById('total-price');
+    listDiv.innerHTML = ""; 
+    let total = 0;
+
+    if(cart.length === 0) {
+        listDiv.innerHTML = '<p style="text-align: center; color: #888;">السلة فاضية حالياً</p>';
+    } else {
+        cart.forEach((item, index) => {
+            total += item.price;
+            listDiv.innerHTML += `
+                <div style="background:#222; margin-bottom:15px; padding:15px; border-radius:12px; border:1px solid gold; direction:rtl;">
+                    <div style="display:flex; align-items:center; gap:15px; margin-bottom:10px;">
+                        <img src="${item.img}" style="width:60px; height:60px; border-radius:8px; object-fit:cover; border:1px solid #444;">
+                        <div style="text-align:right; flex-grow:1;">
+                            <p style="margin:0; font-weight:bold; color:gold; font-size:16px;">${item.name}</p>
+                            <p style="margin:5px 0 0 0; color:#ccc; font-size:14px;">السعر: ${item.price} جنيه</p>
+                        </div>
+                    </div>
+                    <div style="text-align:center; border-top:1px solid #333; padding-top:10px;">
+                        <button onclick="removeFromCart(${index})" style="background:#ff4444; color:white; border:none; border-radius:6px; padding:6px 20px; cursor:pointer; font-weight:bold;">حذف 🗑️</button>
+                    </div>
+                </div>`;
+        });
+    }
+    totalSpan.innerText = total + " جنيه";
+    document.getElementById('cart-sidebar').style.display = 'block';
+}
+
+// 4. دالة حذف منتج من السلة
+function removeFromCart(index) {
+    cart.splice(index, 1);
+    document.getElementById('cart-count').innerText = cart.length;
+    showCart();
+}
+
+function sendOrder() {
+    if(cart.length === 0) return alert("السلة فاضية يا غالي!");
+    
+    let msg = "🛒 *طلب جديد من الموقع*:\n\n";
+    let total = 0;
+
+    cart.forEach((item, index) => {
+        msg += `*${index + 1}- المنتج:* ${item.name}\n`;
+        msg += `*السعر:* ${item.price} جنيه\n`;
+        msg += `*رابط الصورة:* ${item.img}\n`; // ده بيبعت لينك الصورة عشان تشوفها
+        msg += `--------------------------\n`;
+        total += item.price;
+    });
+
+    msg += `\n💰 *إجمالي الحساب:* ${total} جنيه`;
+    
+    // الرقم بتاعك اللي طلبته: 01120327355
+    let whatsappNumber = "201120327355"; 
+    window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(msg)}`);
 }
 </script>
 </body>
